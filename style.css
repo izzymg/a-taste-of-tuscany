@@ -1,0 +1,145 @@
+:root {
+    --bg: rgb(220, 221, 212);
+    --accent: rgb(230, 52, 7);
+    --alt-bg: rgb(238, 209, 172);
+}
+
+body {
+    margin: 0;
+    color: hsl(0, 0%, 10%);
+    font-family: 'Lato', sans-serif;
+}
+
+.intro {
+    background-color: var(--bg);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 10vh 0;
+}
+
+nav {
+    background-color: var(--alt-bg);
+    width: 100%;
+    margin: 0 0 2em 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+nav .layout-wrap {
+    width: 80%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    list-style: none;
+    padding: 0;
+
+    gap: 1em;
+    font-size: 18px;
+
+}
+
+nav ul svg {
+    width: 55px;
+    transform: scaleX(-1)
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+nav ul .cta-btn {
+    margin-left: auto;
+}
+
+button.cta-btn {
+
+    cursor: pointer;
+        
+    background-color: var(--accent);
+    color: #fff;
+    font-size: 1em;
+    vertical-align: middle;
+
+    padding: 0.75em 1.5em;
+
+    border: none;
+    box-sizing: border-box;
+    font-family: inherit;
+    text-transform: uppercase;
+}
+
+.gfx-container {
+    border-radius: 2px;
+    background-color: var(--alt-bg);
+    box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    isolation: isolate;
+}
+
+.circle {
+    --overlap: -105px;
+    width: 250px;
+    height: 250px;
+
+    opacity: 0.5;
+    filter: contrast(270%) brightness(200%);
+    mix-blend-mode: luminosity;
+}
+
+.circle-a {
+    background: url(./circle.svg) no-repeat;
+    margin-right: var(--overlap);
+    opacity: 0.3;
+}
+
+.circle-b { 
+    background: url(./circle\ copy.svg) no-repeat;
+}
+
+.circle-c {
+    background: url(./circle\ copy\ 2.svg) no-repeat;
+    margin-left: var(--overlap);
+    opacity: 0.3;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'EB Garamond', sans-serif;
+}
+
+.text-overlay > * {
+    margin: 0;
+}
+
+.text-overlay h1 {
+    font-size: 7em;
+    color: hsl(0, 0%, 10%);
+}
+
+.text-overlay h2 {
+    text-transform: uppercase;
+    color: hsl(0, 0%, 20%);
+}
