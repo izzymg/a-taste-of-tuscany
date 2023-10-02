@@ -1,6 +1,6 @@
 :root {
     --bg: rgb(220, 221, 212);
-    --accent: rgb(230, 52, 7);
+    --accent: rgb(206, 41, 0);
     --alt-bg: rgb(238, 209, 172);
 }
 
@@ -8,6 +8,10 @@ body {
     margin: 0;
     color: hsl(0, 0%, 10%);
     font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'EB Garamond', sans-serif;
 }
 
 .intro {
@@ -126,8 +130,6 @@ button.cta-btn {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-
-    font-family: 'EB Garamond', sans-serif;
 }
 
 .text-overlay > * {
@@ -142,4 +144,76 @@ button.cta-btn {
 .text-overlay h2 {
     text-transform: uppercase;
     color: hsl(0, 0%, 20%);
+}
+
+.gallery-wrap {
+    width: 80%;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.gallery li {
+    height: 30vh;
+    flex-grow: 1;
+}
+
+.gallery img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.gallery .contact-box {
+    background-color: var(--alt-bg);
+    height: 100%;
+
+    padding: 1em;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.gallery .contact-box h2 {
+    font-size: 2.3em;
+    margin: 1em 0;
+}
+
+.gallery .icon-box {
+    display: flex;
+    flex-flow: row;
+
+    gap: 1em;
+    margin: 5px 0;
+}
+
+.gallery .icon-box svg {
+    fill: hsl(0, 0%, 20%);
+    mix-blend-mode: color-burn;
+}
+
+.gallery .icon-box a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.gallery .icon-box:hover a::after {
+    position: absolute;
+    content: "<";
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.gallery .contact-box button.cta-btn {
+    margin-top: 1em;
+    width: fit-content;
 }
