@@ -104,17 +104,17 @@ button.cta-btn {
 }
 
 .circle-a {
-    background: url(./circle.svg) no-repeat;
+    background: url(./svgs/circle.svg) no-repeat;
     margin-right: var(--overlap);
     opacity: 0.3;
 }
 
 .circle-b { 
-    background: url(./circle\ copy.svg) no-repeat;
+    background: url(./svgs/circle-b.svg) no-repeat;
 }
 
 .circle-c {
-    background: url(./circle\ copy\ 2.svg) no-repeat;
+    background: url(./svgs/circle-c.svg) no-repeat;
     margin-left: var(--overlap);
     opacity: 0.3;
 }
