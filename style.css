@@ -2,6 +2,7 @@
     --bg: rgb(220, 221, 212);
     --accent: rgb(206, 41, 0);
     --alt-bg: rgb(238, 209, 172);
+    --dark-bg: hsl(0, 0%, 8%);
 }
 
 body {
@@ -51,7 +52,7 @@ nav ul {
 
 nav ul svg {
     width: 55px;
-    transform: scaleX(-1)
+    transform: scaleX(-1);
 }
 
 nav ul li {
@@ -216,4 +217,91 @@ button.cta-btn {
 .gallery .contact-box button.cta-btn {
     margin-top: 1em;
     width: fit-content;
+}
+
+footer {
+    background-color: var(--dark-bg);
+    color: hsl(0, 0%, 85%);
+
+    display: flex;
+    justify-content: center;
+    padding: 4em 1em;
+}
+
+footer .title-wrap {
+    display: flex;
+    flex-flow: column;
+    gap: 1em;
+}
+
+footer .icon-title {
+    display: flex;
+    font-size: 1.4em;
+}
+
+footer .icon-title svg {
+    fill: white;
+    transform: scaleX(-1);
+    width: 64px;
+}
+
+.designer-widget {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.designer-widget span {
+    font-size: 0.8em;
+}
+
+.designer-widget a {
+    color: var(--accent);
+    text-decoration: none;
+    margin: 1em;
+    font-size: 1.1em;
+}
+
+.review-widget {
+    display: flex;
+    flex-flow: column;
+    box-sizing: border-box;
+    border: rgba(255, 255, 255, 0.5) 1px solid;
+
+    box-shadow: 4px 4px 0px var(--accent);
+
+    border-radius: 4px;
+    padding: 1em 0.65em;
+
+    max-width: 300px;
+}
+
+.review-widget .stars-wrap {
+    display: flex;
+    flex: row;
+    justify-content: center;
+}
+
+.review-widget .review-content-wrap {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    font-size: 0.8em;
+}
+
+.review-widget .review-name {
+    margin-top: auto;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+section.reviews {
+    display: flex;
+    gap: 1em;
+
+    margin: 0 2em 0 auto;
 }
