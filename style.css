@@ -25,7 +25,8 @@ h1, h2, h3, h4 {
 }
 
 nav {
-    background-color: var(--alt-bg);
+    background: url(./images/cross-repeat.png), var(--alt-bg) repeat-x;
+    background-blend-mode: multiply;
     width: 100%;
     margin: 0 0 2em 0;
 
