@@ -1,8 +1,8 @@
 - [x] footer
 - [] image correctness (width specified)
 - [] hover/focus states
-- [] material/pattern in navbar
-- [] sticky navbar
+- [x] material/pattern in navbar
+- [x] sticky navbar
 - [] interactive gallery (click to view in modal)
 - [] mobile ux pass
 - [] scroll effects
