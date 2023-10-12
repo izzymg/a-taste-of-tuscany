@@ -1,6 +1,6 @@
 - [x] footer
 - [] image correctness (width specified)
-- [] hover/focus states
+- [x] hover/focus states
 - [x] material/pattern in navbar
 - [x] sticky navbar
 - [] interactive gallery (click to view in modal)

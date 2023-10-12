@@ -16,6 +16,26 @@ h1, h2, h3, h4 {
     font-family: 'EB Garamond', sans-serif;
 }
 
+#image-modal {
+    border-width: 1px;
+    border-radius: 1px;
+    padding: 0;
+    outline: none;
+    max-height: 75vh;
+    overflow: hidden;
+}
+
+#image-modal::backdrop {
+    background-color: hsla(0, 0%, 8%, 60%);
+}
+
+.image-modal-content img {
+    width: auto;
+    height: 75vh;
+    margin: 0;
+    object-fit: contain;
+}
+
 .intro {
     background-color: var(--bg);
     display: flex;
@@ -185,6 +205,7 @@ button.cta-btn:focus {
     min-width: 100%;
     object-fit: cover;
     vertical-align: bottom;
+    cursor: pointer;
 }
 
 .gallery .contact-box {
