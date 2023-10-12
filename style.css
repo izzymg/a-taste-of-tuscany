@@ -65,6 +65,60 @@ nav .layout-wrap {
     width: min(1500px, 95vw);
 }
 
+nav ul li.lrg {
+    display: none;
+}
+
+nav ul a {
+    color: var(--dark-bg);
+    text-decoration: none;
+    outline: none;
+}
+
+nav ul a:focus {
+    border-bottom: 1px solid var(--accent);
+}
+
+@media (min-width: 750px) {
+    nav ul li.lrg {
+        display: block;
+    }
+    nav ul li.sml-menu {
+        display: none;
+    }
+}
+
+nav ul li.sml-menu .sml-menu-dropdown {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--bg);
+
+    padding: 1em 2em;
+    height: 100vh;
+
+    opacity: 0;
+}
+
+nav ul li .sml-menu-dropdown li {
+    margin: 1em 0;
+    font-size: 1.1em;
+    border-bottom: 1px solid hsl(0, 0%, 75%);
+}
+
+nav ul li .sml-menu-dropdown li:last-child {
+    margin-top: 2em;
+}
+
+nav ul li.sml-menu:hover > .sml-menu-dropdown, nav ul li.sml-menu:focus-within > .sml-menu-dropdown, nav ul li .sml-menu-dropdown {
+    visibility: visible;
+    display: block;
+    opacity: 1;
+    width: 50vw;
+}
+
 nav ul {
     display: flex;
     justify-content: center;
@@ -115,6 +169,7 @@ button.cta-btn:hover {
 button.cta-btn:focus {
     background-color: white;
     color: var(--dark-bg);
+    outline: none;
 }
 
 .gfx-container {
@@ -228,7 +283,7 @@ button.cta-btn:focus {
     margin: 1em 0;
 }
 
-.gallery .icon-box {
+.icon-box {
     display: flex;
     flex-flow: row;
 
@@ -236,24 +291,25 @@ button.cta-btn:focus {
     margin: 5px 0;
 }
 
-.gallery .icon-box svg {
+.icon-box svg {
     fill: hsl(0, 0%, 20%);
     mix-blend-mode: color-burn;
 }
 
-.gallery .icon-box a {
+.icon-box a {
     color: inherit;
     text-decoration: none;
+    font-size: 14px;
 }
 
-.gallery .icon-box:hover a::after {
+.icon-box:hover a::after {
     position: absolute;
     content: "<";
     margin-left: 10px;
     font-weight: bold;
 }
 
-.gallery .contact-box button.cta-btn {
+.contact-box button.cta-btn {
     margin-top: 1em;
     width: fit-content;
 }
