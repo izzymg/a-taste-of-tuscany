@@ -62,7 +62,7 @@ nav {
 }
 
 nav .layout-wrap {
-    width: 80%;
+    width: min(1500px, 95vw);
 }
 
 nav ul {
@@ -121,7 +121,7 @@ button.cta-btn:focus {
     border-radius: 2px;
     background-color: var(--alt-bg);
     box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.1);
-    width: 80%;
+    width: min(1500px, 95vw);
     height: 250px;
     display: flex;
     align-items: center;
@@ -175,7 +175,7 @@ button.cta-btn:focus {
 }
 
 .text-overlay h1 {
-    font-size: 7em;
+    font-size: calc(2vw + 3rem);
     color: hsl(0, 0%, 10%);
 }
 
@@ -185,7 +185,7 @@ button.cta-btn:focus {
 }
 
 .gallery-wrap {
-    width: 80%;
+    width: min(1500px, 95vw);
 }
 
 .gallery {
@@ -201,6 +201,7 @@ button.cta-btn:focus {
 }
 
 .gallery img {
+    max-width: 100%;
     max-height: 100%;
     min-width: 100%;
     object-fit: cover;
