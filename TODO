@@ -3,6 +3,6 @@
 - [x] hover/focus states
 - [x] material/pattern in navbar
 - [x] sticky navbar
-- [] interactive gallery (click to view in modal)
-- [] mobile ux pass
+- [x] interactive gallery (click to view in modal)
+- [x] mobile ux pass
 - [] scroll effects
