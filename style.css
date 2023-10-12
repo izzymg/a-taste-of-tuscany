@@ -319,6 +319,7 @@ footer {
     color: hsl(0, 0%, 85%);
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 4em 1em;
 }
