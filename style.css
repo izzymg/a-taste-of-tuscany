@@ -1,6 +1,7 @@
 :root {
     --bg: rgb(220, 221, 212);
     --accent: rgb(206, 41, 0);
+    --accent-lighter: rgb(228, 117, 89);
     --alt-bg: rgb(238, 209, 172);
     --dark-bg: hsl(0, 0%, 8%);
 }
@@ -85,6 +86,15 @@ button.cta-btn {
     box-sizing: border-box;
     font-family: inherit;
     text-transform: uppercase;
+}
+
+button.cta-btn:hover {
+    background-color: var(--accent-lighter);
+}
+
+button.cta-btn:focus {
+    background-color: white;
+    color: var(--dark-bg);
 }
 
 .gfx-container {
